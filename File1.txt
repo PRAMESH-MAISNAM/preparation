@@ -1,0 +1,12 @@
+#shell script to find the sum of digits of a number
+
+echo -n "Enter any number="
+read num
+sum=0
+while [ $sum -ne 0 ]
+do
+rem=$(($num%10))
+sum=$(($sum+$rem))
+num=$(($num/10))
+done
+echo "The sum is $num"
